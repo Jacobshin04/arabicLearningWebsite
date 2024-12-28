@@ -30,7 +30,7 @@ function showGrammarTable() {
 
 // Open Form in a New Window
 function viewPattern(pattern) {
-    const newWindow = window.open("", "_blank", "width=500px,height=600px");
+    const newWindow = window.open("", "_blank", "width=500px,height=650px");
     if (!newWindow) {
         alert("Pop-up blocked! Please allow pop-ups for this website.");
         return;
@@ -43,6 +43,11 @@ function viewPattern(pattern) {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title> ${pattern} Verb Pattern Table</title>
             <link rel = "stylesheet" href = "foo.css">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 
         </head>
         <body>

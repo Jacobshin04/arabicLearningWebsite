@@ -3,8 +3,7 @@ body {
 	font-family: Arial, sans-serif;
 	justify-content: center;
 	align-items: center;
-	height: 100%; 
-	width: 100%;
+
 	/* Make the body take up the full viewport height */
 	margin: 0; 
   }
@@ -15,12 +14,12 @@ form {
 
 .verbPatternForm{
 	width: 500px;
-	height: 750px;
+	height: 700px;
 	/* border: 2px solid black; */
 	/* margin: 20px; */
 	/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
     border-radius: 10px;
-	padding: 15px;
+	padding-top: 40px;
 	text-align: center;
     
 }
@@ -83,7 +82,7 @@ form {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 #formsContainer td{
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: 300;
 	font-family: "Noto Naskh Arabic";
 }
@@ -94,7 +93,7 @@ form {
 
 }
 #formsContainer th, td {
-  	padding: 3px 12px;
+  	padding: 1.5px 12px;
 	text-align: center;
 	vertical-align: middle;
 }
