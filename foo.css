@@ -1,0 +1,125 @@
+body {
+	/* display: flex; */
+	font-family: Arial, sans-serif;
+	justify-content: center;
+	align-items: center;
+	height: 100%; 
+	width: 100%;
+	/* Make the body take up the full viewport height */
+	margin: 0; 
+  }
+
+form {
+	margin: 0;
+}
+
+.verbPatternForm{
+	width: 500px;
+	height: 750px;
+	/* border: 2px solid black; */
+	/* margin: 20px; */
+	/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+    border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+    
+}
+.wordListForm{
+	width: 500px;
+	height: 600px;
+	/* border: 2px solid black; */
+	margin: 20px 50px;
+
+	/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+    border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	align-items: flex-start;
+    
+}
+
+#wordListContainer table, th, td, tr{
+	/* border: 0.5px solid black; */
+  	border-collapse: collapse;
+    font-size: 25px;
+    font-family:  calibri, Arial;
+	
+	/* "Noto Naskh Arabic", */
+}
+
+#wordListContainer th, td, tr{
+	padding: 0px 25px;
+}
+
+#wordListContainer table {
+	width: auto;
+	border-collapse: collapse;
+    margin: 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#formsContainer{
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 600px;
+	justify-content: center;
+	align-items: center;
+}
+#formscontainer table, th, td, tr{
+	border: 1px solid black;
+  	border-collapse: collapse;
+    font-size: 25px;
+    font-family:  calibri, Arial;
+	
+	/* "Noto Naskh Arabic", */
+}
+/* #formscontainer  */
+#formsContainer table {
+	width: fit-content;
+	border-collapse: collapse;
+    margin: 20px 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#formsContainer td{
+	font-size: 28px;
+	font-weight: 300;
+	font-family: "Noto Naskh Arabic";
+}
+#formsContainer th {
+	padding:8px 20px;
+	font-weight: 400;
+	font-size: 35px;
+
+}
+#formsContainer th, td {
+  	padding: 3px 12px;
+	text-align: center;
+	vertical-align: middle;
+}
+#formsContainer tr:nth-of-type(odd) {
+	background-color: #FEF9EF;
+  }
+
+  tr th[scope="col"] {
+	background-color: rgb(186, 186, 186);
+	color: #fff;
+  }
+#formsContainer .first_column{
+	background-color:  #ddeeff;
+}
+
+
+#div {
+	display: flex;
+	flex-direction: column;
+}
+
+.green{
+	 background-color: lightgreen;
+}
+.blue{
+	background-color: #03346e;
+	color:whitesmoke;
+}
