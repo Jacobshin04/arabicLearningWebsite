@@ -5,9 +5,12 @@
 }
 
 body {
-	font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .container {
@@ -16,26 +19,27 @@ body {
 }
 
 .sidebar {
-    width: 400px;
+    width: 250px;
     min-width: 250px;
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     padding: 20px;
     display: flex;
+    color: #fff;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: stretch;
+    /* justify-content: flex-start; */
+    align-content: center;
     border-right: 1px solid #e5e7eb;
 }
 
 .sidebar h2 {
     font-size: 2rem;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .sidebar p {
-    font-size: 1.5em;
-    color: #5c6b73;
-    margin-bottom: 100px;
+    font-size: 1.2em;
+    margin-bottom: 50px;
 }
 
 .sidebar nav ul {
@@ -44,21 +48,31 @@ body {
 }
 
 .sidebar nav ul li {
-    margin-bottom: 30px;
+    margin: 15px 0;
 }
 
 .sidebar nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: 500;
     display: flex;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    height: 40px; 
     align-items: center;
 }
 
+
+.sidebar nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 .sidebar nav ul li.active a {
-    background-color: #e5e7eb;
-    padding: 10px;
-    border-radius: 8px;
+    background-color: #e5e7eb; /* Light gray background for active item */
+    color: #333; /* Dark text color for active item */
+    padding: 10px; /* Extra padding for active item */
+    border-radius: 8px; /* Rounded corners */
 }
 
 .new-course-btn {
@@ -69,7 +83,7 @@ body {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    margin-top: 300px;
+    margin-top: 150px;
     font-size: 1.5rem;
     
 }
@@ -79,12 +93,12 @@ body {
 }
 
 .settings {
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 .settings a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     display: block;
     margin-bottom: 10px;
 }
@@ -92,7 +106,7 @@ body {
 .content {
     flex: 1;
     padding: 40px;
-    max-width:1200px;
+    width:1000px;
 }
 /* image */
 /* need update from here */
@@ -116,6 +130,7 @@ body {
     object-fit: none;
     border-radius: 1.5rem;
     background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .w-full {
     width: 100%;
@@ -126,7 +141,8 @@ body {
 
 .content h1 {
     font-size: 1.8em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 .content h2 {
@@ -176,4 +192,8 @@ table td a:hover {
 
 .start-quiz-btn:hover {
     background-color: #0056b3;
+}
+
+.nav-buttons {
+    border:#0056b3;
 }
