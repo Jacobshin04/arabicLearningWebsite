@@ -68,18 +68,8 @@ function arabicVowelRemove(word){
 
 const addStyles = (el, styles) => Object.assign(el.style, styles);
 
-/* addStyles(document.getElementById('my-element'), {
-  background: 'red',
-  color: '#ffff00',
-  fontSize: '3rem'
-}); */
 
 function setUpForm(pattern, form){
-/*     eval('const ' + pattern + '_obj ' + '= new ' + pattern.slice(0, 3)
-        + 'Pattern();');
-    console.log(' const ' + pattern + '_obj ' + '= new ' + pattern.slice(0, 3)
-    + 'Pattern();'); */
-    
     eval('const ' + pattern + '_display' + '= document.getElementById("' 
         + pattern + '_display");' );
 
@@ -99,34 +89,7 @@ function setUpForm(pattern, form){
         );
         });
 }
-//original code
-/* const F1_A_display = document.getElementById("F1_A_display");
-const F1_A_input = document.getElementById("F1_A_input");
-const F1_A_form = document.getElementById("F1_A_form");
 
-F1_A_form.addEventListener("submit",  event => {
-
-    event.preventDefault();
-
-    const arabicWord = F1_A_input.value;
-    F1_obj.F1_A(arabicWord, F1_A_display);
-    
-}); */
-
-//before
-// function changeTextColorArr (textArr, colorArr){
-//     resultArr = [];
-//     for(let i = 0; i < textArr.length; i++)
-//     {
-//         color = colorArr[i] === "" ? "black" : colorArr[i];
-//         beginTag =   `<span style="color: ${color}">`
-//         endTag= '</span>';
-
-//         result = beginTag + textArr[i] + endTag;
-//         resultArr.push(result);
-//     }
-//     return resultArr;
-// }
 function changeTextColorArr(textArr, colorArr) {
     resultArr = [];
     for (let i = 0; i < textArr.length; i++) {
@@ -136,7 +99,6 @@ function changeTextColorArr(textArr, colorArr) {
         span.style.color = color;
         span.textContent = textArr[i]; // Safely set the text content
     
-        // fragment.appendChild(span); // Append the span to the document fragment
         resultArr.push(span.outerHTML);
     }
     
@@ -419,6 +381,28 @@ class F2_Pattern {
     {
         this.lineK = changeTextColorArr(["ي", "وا", "تِ", "توا", "ت", "َت", "نا",
             "ِت", "ْتِ", "ْتوا", "ْنا", "ُوا", "ِي" ], 
+        ["purple", "purple", "red", "red", "red", "red", "red", "red", "red", "red", "red", "purple", "red"]);
+
+        this.lineL = changeTextColorArr(["بَ", "بِتْ", "بِنْ", "بِ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineM = changeTextColorArr(["بْتِ", "بْنِ", "إ", "َى", "وْ", "ؤ"], 
+            ["blue", "blue", "orange", "green", "green", "black"]);
+                               
+        this.lineN = changeTextColorArr(["بُ", "بْتُ", "بْنُ", "بُ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineO = changeTextColorArr(["أُ", "َيْ"], 
+            ["orange", "green"]);
+            
+    }
+}
+
+class F3_Pattern {
+    constructor()
+    {
+        this.lineK = changeTextColorArr(["ِي", "وا", "ْتِ", "ْتوا", "ت", "َت", "ْنا",
+            "ِت", "تِ", "توا", "نا", "ُوا", "ِي" ], 
         ["purple", "purple", "red", "red", "red", "red", "red", "red", "red", "red", "red", "purple", "red"]);
 
         this.lineL = changeTextColorArr(["بَ", "بِتْ", "بِنْ", "بِ"], 

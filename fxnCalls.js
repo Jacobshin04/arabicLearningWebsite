@@ -28,6 +28,9 @@ const F2_A_obj = new F2_Pattern();
 const F2_B_obj = new F2_Pattern();
 const F2_C_obj = new F2_Pattern();
 
+const F3_A_obj = new F3_Pattern();
+const F3_B_obj = new F3_Pattern();
+
 
 // makeForm("F1_A");
 // setUpForm("F1_A");
