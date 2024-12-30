@@ -421,3 +421,24 @@ class F3_Pattern {
 
 }
 
+class F4_Pattern {
+    constructor()
+    {
+        this.lineK = changeTextColorArr(["ي", "وا", "تِ", "توا", "ت", "َت", "نا",
+            "ِت", "ْتِ", "ْتوا", "ْنا", "ُوا", "ِي" ], 
+        ["purple", "purple", "red", "red", "red", "red", "red", "red", "red", "red", "red", "purple", "red"]);
+
+        this.lineL = changeTextColorArr(["بَ", "بِتْ", "بِنْ", "بِ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineM = changeTextColorArr(["بْتِ", "بْنِ", "إ", "َى", "وْ", "ؤ"], 
+            ["blue", "blue", "orange", "green", "green", "black"]);
+                               
+        this.lineN = changeTextColorArr(["بُ", "بْتُ", "بْنُ", "بُ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineO = changeTextColorArr(["أُ", "َيْ"], 
+            ["orange", "green"]);
+            
+    }
+}

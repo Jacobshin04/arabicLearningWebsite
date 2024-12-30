@@ -31,6 +31,14 @@ const F2_C_obj = new F2_Pattern();
 const F3_A_obj = new F3_Pattern();
 const F3_B_obj = new F3_Pattern();
 
+const F4_A_obj = new F4_Pattern();
+const F4_B_obj = new F4_Pattern();
+const F4_D_obj = new F4_Pattern();
+const F4_G_obj = new F4_Pattern();
+
+
+
+
 
 // makeForm("F1_A");
 // setUpForm("F1_A");
