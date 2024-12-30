@@ -42,20 +42,52 @@ body {
 
 @media (max-width: 768px) {
     .sidebar {
-        position: absolute;
-        width: 100%;
+        position: fixed;
+        width: 30%;
+        min-width: 150px;
         height: auto;
         background: linear-gradient(135deg, #007bff, #004080);
         padding: 10px;
     }
 
+    .sidebar nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        padding: 0px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        height: 40px; 
+        align-items: flex-start;
+    }
     .content {
+        position: absolute;
+
         margin-left: 0;
         padding: 20px;
     }
+
+    .content {
+        width: calc(100% - 150px); /* Adjust based on sidebar width */
+        margin-left: 150px; /* Adjust based on sidebar width */
+    }
+    .contianer {
+        margin: 0px;
+        width: 70%;
+    }
 }
 
-
+.main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: calc(100% - 250px); /* Adjust based on sidebar width */
+    margin-left: 250px; /* Adjust based on sidebar width */
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    transition: margin-left 0.3s ease, width 0.3s ease; /* Smooth transition for resizing */
+}
 
 
 /* .sidebar {
