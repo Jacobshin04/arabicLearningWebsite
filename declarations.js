@@ -45,10 +45,10 @@ String.prototype.addVerbAt=function(indexPosition, stringToAdd) {
 }
 
 
-String.prototype.addAllVerbs= function addAllVerbs(firstVerb="", secondVerb="", thirdVerb="", fourthVerb="") {
+String.prototype.addAllVerbs= function addAllVerbs(firstVerb="", secondVerb="", thirdVerb="", fourthVerb="", fifthVerb="") {
     var origString = this.split('');
     result = "";
-    verbs = [firstVerb, secondVerb, thirdVerb, fourthVerb];
+    verbs = [firstVerb, secondVerb, thirdVerb, fourthVerb, fifthVerb];
     for(let i = 0; i < origString.length && i < verbs.length; i++)
     {
         result += origString[i];
@@ -441,4 +441,53 @@ class F4_Pattern {
             ["orange", "green"]);
             
     }
+}
+
+
+
+class F5_Pattern {
+    constructor()
+    {
+        this.lineK = changeTextColorArr(["ي", "وا", "ْتِ", "ْتوا", "ت", "َت", "نا",
+            "ِت", "تِ", "توا", "ْنا", "ُوا", "ِي" ], 
+        ["purple", "purple", "red", "red", "red", "red", "red", "red", "red", "red", "red", "purple", "red"]);
+
+        this.lineL = changeTextColorArr(["بَ", "بِتْ", "بِنْ", "بِ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineM = changeTextColorArr(["بْتِ", "بْنِ", "إ", "ى", "وْ", "ؤ"], 
+            ["blue", "blue", "orange", "green", "green", "black"]);
+                               
+        this.lineN = changeTextColorArr(["بُ", "بْتُ", "بْنُ", "بُ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineO = changeTextColorArr(["أُ", "َيْ"], 
+            ["orange", "green"]);
+            
+    }
+}
+
+
+
+class F6_Pattern {
+    constructor()
+    {
+        this.lineK = changeTextColorArr(["ِي", "وا", "ْتِ", "ْتوا", "ت", "َت", "ْنا",
+            "ِت", "تِ", "توا", "نا", "ُوا", "ِي" ], 
+        ["purple", "purple", "red", "red", "red", "red", "red", "red", "red", "red", "red", "purple", "red"]);
+
+        this.lineL = changeTextColorArr(["بَ", "بِتْ", "بِنْ", "بِ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineM = changeTextColorArr(["بْتِ", "بْنِ", "إ", "َى", "وْ", "ؤ"], 
+            ["blue", "blue", "orange", "green", "green", "black"]);
+                               
+        this.lineN = changeTextColorArr(["بُ", "بْتُ", "بْنُ", "بُ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineO = changeTextColorArr(["أُ", "َيْ"], 
+            ["orange", "green"]);
+            
+    }
+
 }

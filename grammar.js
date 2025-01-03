@@ -3,7 +3,7 @@ function showGrammarTable() {
     const patterns = [
       "F1_A", "F1_B", "F1_D", "F1_M", "F1_E", "F1_N", "F1_C", "F1_L", "F1_H", "F1_F", "F1_G", "F1_T", "F1_J",
       "F1_K", "F1_S", "F1_R", "F1_I", "F1_P", "F1_Y", "F1_X", "F1_W", "F1_Z", "F1_Zc", "F2_A", "F2_B", "F2_C",
-      "F3_A", "F3_B", "F4_A", "F4_B", "F4_D", "F4_G"
+      "F3_A", "F3_B", "F4_A", "F4_B", "F4_D", "F4_G", "F5_A", "F5_B", "F6_A", "F6_B"
     ];
   
     document.querySelector('.content').innerHTML = `

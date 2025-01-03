@@ -36,6 +36,11 @@ const F4_B_obj = new F4_Pattern();
 const F4_D_obj = new F4_Pattern();
 const F4_G_obj = new F4_Pattern();
 
+const F5_A_obj = new F5_Pattern();
+const F5_B_obj = new F5_Pattern();
+
+const F6_A_obj = new F6_Pattern();
+const F6_B_obj = new F6_Pattern();
 
 
 
