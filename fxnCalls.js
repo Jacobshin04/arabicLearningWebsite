@@ -43,6 +43,11 @@ const F6_A_obj = new F6_Pattern();
 const F6_B_obj = new F6_Pattern();
 
 
+const F7_A_obj = new F7_Pattern();
+const F7_B_obj = new F7_Pattern();
+const F7_C_obj = new F7_Pattern();
+
+
 
 
 // makeForm("F1_A");
