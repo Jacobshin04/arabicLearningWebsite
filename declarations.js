@@ -54,6 +54,13 @@ String.prototype.addAllVerbs= function addAllVerbs(firstVerb="", secondVerb="", 
         result += origString[i];
         result += verbs[i];
     }
+    if(origString.length > verbs.length)
+    {
+        for(let i = verbs.length; i < origString.length; i++)
+        {
+            result += origString[i];
+        }
+    }
 
     return result;
 }
@@ -493,6 +500,53 @@ class F6_Pattern {
 }
 
 class F7_Pattern {
+    constructor()
+    {
+        this.lineK = changeTextColorArr(["ي", "وا", "تِ", "توا", "ت", "َت", "نا",
+            "ِت", "ْتِ", "ْتوا", "ْنا", "ُوا", "ِي" ], 
+        ["purple", "purple", "red", "red", "red", "red", "red", "red", "red", "red", "red", "purple", "red"]);
+
+        this.lineL = changeTextColorArr(["بَ", "بِتْ", "بِنْ", "بِ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineM = changeTextColorArr(["بْتِ", "بْنِ", "إ", "َى", "وْ", "ؤ"], 
+            ["blue", "blue", "orange", "green", "green", "black"]);
+                               
+        this.lineN = changeTextColorArr(["بُ", "بْتُ", "بْنُ", "بُ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineO = changeTextColorArr(["أُ", "َيْ", "ا"], 
+            ["orange", "green", "black"]);
+            
+    }
+}
+
+
+
+class F8_Pattern {
+    constructor()
+    {
+        this.lineK = changeTextColorArr(["ي", "وا", "تِ", "توا", "ت", "َت", "نا",
+            "ِت", "ْتِ", "ْتوا", "ْنا", "ُوا", "ِي" ], 
+        ["purple", "purple", "red", "red", "red", "red", "red", "red", "red", "red", "red", "purple", "red"]);
+
+        this.lineL = changeTextColorArr(["بَ", "بِتْ", "بِنْ", "بِ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineM = changeTextColorArr(["بْتِ", "بْنِ", "إ", "َى", "وْ", "ؤ"], 
+            ["blue", "blue", "orange", "green", "green", "black"]);
+                               
+        this.lineN = changeTextColorArr(["بُ", "بْتُ", "بْنُ", "بُ"], 
+            ["blue", "blue", "blue", "blue"]);
+
+        this.lineO = changeTextColorArr(["أُ", "َيْ", "ا"], 
+            ["orange", "green", "black"]);
+            
+    }
+}
+
+
+class F10_Pattern {
     constructor()
     {
         this.lineK = changeTextColorArr(["ي", "وا", "تِ", "توا", "ت", "َت", "نا",

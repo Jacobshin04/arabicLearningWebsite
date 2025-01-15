@@ -47,9 +47,17 @@ const F7_A_obj = new F7_Pattern();
 const F7_B_obj = new F7_Pattern();
 const F7_C_obj = new F7_Pattern();
 
+const F8_A_obj = new F8_Pattern();
+const F8_B_obj = new F8_Pattern();
+const F8_C_obj = new F8_Pattern();
+const F8_D_obj = new F8_Pattern();
+const F8_E_obj = new F8_Pattern();
 
-
-
+const F10_A_obj = new F10_Pattern();
+const F10_B_obj = new F10_Pattern();
+const F10_C_obj = new F10_Pattern();
+const F10_D_obj = new F10_Pattern();
+const F10_E_obj = new F10_Pattern();
 // makeForm("F1_A");
 // setUpForm("F1_A");
 
