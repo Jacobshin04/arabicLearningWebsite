@@ -1854,8 +1854,8 @@ F8_Pattern.prototype.F8_E = function F8_E(input, tableDisplay){
     commandArr.push(this.lineO[2] + he_command); //you1
     commandArr.push(this.lineO[2] + she_command + this.lineK[12]); //you2
     commandArr.push(this.lineO[2] + she_command + this.lineK[11]); //you3
-    commandArr.push(he_command); //he
-    commandArr.push(she_command);
+    commandArr.push(""); //he
+    commandArr.push("");
     commandArr.push("");
     commandArr.push("");
 
@@ -1896,7 +1896,7 @@ F10_Pattern.prototype.F10_A = function F10_A(input, tableDisplay){
     commandArr.push(this.lineO[2] + he_command); //you1
     commandArr.push(commandArr[1] + this.lineK[12]); //you2
     commandArr.push(commandArr[1] + this.lineK[11]); //you3
-    commandArr.push(he_command); //he
+    commandArr.push(""); //he
     commandArr.push("");
     commandArr.push("");
     commandArr.push("");
@@ -1938,7 +1938,7 @@ F10_Pattern.prototype.F10_B = function F10_B(input, tableDisplay){
     commandArr.push(this.lineO[2] + he_command + this.lineK[12]); //you1
     commandArr.push(commandArr[1]); //you2
     commandArr.push(this.lineO[2] + he_command + this.lineK[11]); //you3
-    commandArr.push(he_command); //he
+    commandArr.push(""); //he
     commandArr.push("");
     commandArr.push("");
     commandArr.push("");
